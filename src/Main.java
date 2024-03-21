@@ -52,21 +52,28 @@ public class Main {
 //        vardai.clear();
 
         Book Book1 = new Book();
-       Book1.setTitle("Java for dummies");
-       Book1.setPages(300);
-       Book1.setReleaseYear(1999);
+        Book Book2 = new Book ("balkanas", 500, 2010);
+        Book Book3 = new Book ("Kalkanas", 600, 2015);
 
-        Book Book2 = new Book();
-        Book2.setTitle("C# for dummies");
-        Book2.setPages(500);
-        Book2.setReleaseYear(2000);
+        Book[] books = {Book1, Book2, Book3};
 
-        Book Book3 = new Book();
-        Book3.setTitle("Python for dummies");
-        Book3.setPages(500);
-        Book3.setReleaseYear(2005);
+        for (Book book : books) {
+            System.out.println(book.getTitle() + "-" + book.getPages() + "-" + book.getReleaseYear());
+        }
 
-        ArrayList<Book> Book = new ArrayList<>();
+        Plant plant1 = new Plant("Sunflower", "Helianthus annuus", true,
+                "North America", 2.5, false);
+        Plant plant2 = new Plant("Rose", "Rosa", false,
+                "Europe", 1.0, true);
+        Plant plant3 = new Plant("Bamboo", "Bambusoideae", false,
+                "Asia", 10.0, true);
+        Plant plant4 = new Plant("Cactus", "Cactaceae", true,
+                "North America", 0.5, true);
+
+        Plant[] plants = {plant1, plant2, plant3, plant4};
+        for (Plant plant : plants) {
+            System.out.println(plant);
+        }
 
     }
 }

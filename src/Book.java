@@ -3,29 +3,6 @@ public class Book {
     private int pages;
     private int releaseYear;
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getTitle() {
-        return this.title;
-    }
-
-    public void setPages(int pages) {
-        this.pages = pages;
-    }
-
-    public int getPages() {
-        return this.pages;
-    }
-
-    public void setReleaseYear(int releaseYear) {
-        this.releaseYear = releaseYear;
-    }
-
-    public int getReleaseYear() {
-        return this.releaseYear;
-    }
     public Book(){
 
     }
@@ -35,4 +12,20 @@ public class Book {
         this.releaseYear = releaseYear;
 
     }
+
+
+    public String getTitle() {
+        return title;
+    }
+
+
+    public int getPages() {
+        return pages;
+    }
+
+
+    public int getReleaseYear() {
+        return releaseYear;
+    }
+
 }
