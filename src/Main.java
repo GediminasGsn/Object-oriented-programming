@@ -54,26 +54,46 @@ public class Main {
         Book Book1 = new Book();
         Book Book2 = new Book ("balkanas", 500, 2010);
         Book Book3 = new Book ("Kalkanas", 600, 2015);
+        Book Book4 = new Book ("Falkanas", 300, 2005);
+        Book Book5 = new Book ("Alkanas", 200, 2000);
+        Book Book6 = new Book ("Tralkanas", 100, 1999);
 
-        Book[] books = {Book1, Book2, Book3};
 
-        for (Book book : books) {
-            System.out.println(book.getTitle() + "-" + book.getPages() + "-" + book.getReleaseYear());
+//        Book[] books = {Book1, Book2, Book3};
+//
+//        for (Book book : books) {
+//            System.out.println(book.getTitle() + "-" + book.getPages() + "-" + book.getReleaseYear());
+//        }
+
+        ArrayList<Book> Books = new ArrayList<>();
+        Books.add(Book1);
+        Books.add(Book2);
+        Books.add(Book3);
+        Books.add(Book4);
+        Books.add(Book5);
+        Books.add(Book6);
+
+        for (int i = 0; i < Books.size(); i++) {
+            System.out.println(Books.get(i).getTitle() + " " + Books.get(i).getPages() + " " + Books.get(i).getReleaseYear());
         }
 
-        Plant plant1 = new Plant("Sunflower", "Helianthus annuus", true,
+
+        Plant plant1 = new Plant("zole", "zaliusmaximus", true,
                 "North America", 2.5, false);
-        Plant plant2 = new Plant("Rose", "Rosa", false,
+        Plant plant2 = new Plant("Rose", "spikeskaudulus", false,
                 "Europe", 1.0, true);
-        Plant plant3 = new Plant("Bamboo", "Bambusoideae", false,
+        Plant plant3 = new Plant("bambukas", "verylongulus", false,
                 "Asia", 10.0, true);
-        Plant plant4 = new Plant("Cactus", "Cactaceae", true,
+        Plant plant4 = new Plant("Cactus", "spikyboi", true,
                 "North America", 0.5, true);
 
         Plant[] plants = {plant1, plant2, plant3, plant4};
         for (Plant plant : plants) {
             System.out.println(plant);
         }
+
+
+
 
     }
 }
