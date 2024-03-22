@@ -29,10 +29,10 @@ public class Plant {
         return "Auglas: " +
                  name + '-' +
                   latName + '-' +
-                  oneYear + "-" +
+                (oneYear ? "vienmetis":"daugiametis") + "-" +
                   continent + '-' +
                   height + "-" +
-                  isEdible + ".";
+                (isEdible ? "valgomas" : "nevalgomas")+ ".";
     }
 
 
