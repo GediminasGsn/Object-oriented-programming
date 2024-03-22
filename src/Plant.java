@@ -26,14 +26,13 @@ public class Plant {
 
     @Override
     public String toString() {
-        return "Plant{" +
-                "name='" + name + '\'' +
-                ", latName='" + latName + '\'' +
-                ", oneYear=" + oneYear +
-                ", continent='" + continent + '\'' +
-                ", height=" + height +
-                ", isEdible=" + isEdible +
-                '}';
+        return "Auglas: " +
+                 name + '-' +
+                  latName + '-' +
+                  oneYear + "-" +
+                  continent + '-' +
+                  height + "-" +
+                  isEdible + ".";
     }
 
 
